@@ -1,0 +1,244 @@
+11-Aug-2020 13:21:04.956 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11-Aug-2020 13:21:09.678 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+11-Aug-2020 13:21:09.678 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+11-Aug-2020 13:21:09.823 +06:00 [INF] Request finished in 147.9286ms 200 
+11-Aug-2020 13:21:10.353 +06:00 [INF] Request finished in 678.001ms 200 text/html
+11-Aug-2020 13:21:10.529 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/swagger-ui.css  
+11-Aug-2020 13:21:10.530 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/swagger-ui-standalone-preset.js  
+11-Aug-2020 13:21:10.530 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/swagger-ui-bundle.js  
+11-Aug-2020 13:21:10.747 +06:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+11-Aug-2020 13:21:10.758 +06:00 [INF] Request finished in 228.2728ms 200 text/css
+11-Aug-2020 13:21:10.798 +06:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+11-Aug-2020 13:21:10.798 +06:00 [INF] Request finished in 268.06ms 200 application/javascript
+11-Aug-2020 13:21:10.884 +06:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+11-Aug-2020 13:21:10.885 +06:00 [INF] Request finished in 354.6826ms 200 application/javascript
+11-Aug-2020 13:21:11.142 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+11-Aug-2020 13:21:12.675 +06:00 [INF] Request finished in 1533.3771ms 200 application/json;charset=utf-8
+11-Aug-2020 13:35:10.941 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/supplier/addsupplier application/json-patch+json 370
+11-Aug-2020 13:35:10.943 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:35:10.943 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:35:10.969 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:35:10.969 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:35:11.273 +06:00 [INF] Route matched with {action = "AddSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddSupplier(Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:35:12.335 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:35:13.164 +06:00 [WRN] No type was specified for the decimal column 'Cost' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:35:13.164 +06:00 [WRN] No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:35:13.164 +06:00 [WRN] No type was specified for the decimal column 'Quantity' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:35:13.377 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:35:15.552 +06:00 [ERR] An error occurred using a transaction.
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at System.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at System.Data.SqlClient.SqlInternalTransaction.Commit()
+   at System.Data.SqlClient.SqlTransaction.Commit()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Commit()
+11-Aug-2020 13:35:16.482 +06:00 [INF] Executed DbCommand (1,389ms) [Parameters=[@__supplier_Phone_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE [item].[Phone] = @__supplier_Phone_0
+11-Aug-2020 13:35:16.935 +06:00 [ERR] An error occurred using a transaction.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at System.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at System.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at System.Data.SqlClient.SqlTransaction.Rollback()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Rollback()
+11-Aug-2020 13:35:17.421 +06:00 [ERR] Error report generate {"SupplierId":0,"SupplierName":"","CompanyId":0,"CountryId":0,"PostalCode":"","VatNumber":"","Email":"","Phone":"","Address":"","City":"","State":"","IsActive":false,"CreatedDate":"2020-08-11T13:35:15.3980851+06:00","CreatedBy":0,"UpdatedDate":"2020-08-11T13:35:15.3980859+06:00","UpdatedBy":0,"$type":"Supplier"} on "2020-08-11T13:35:17.4024517+06:00"
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Pos.Service.SupplierService.AddSupplier(Supplier supplier) in F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\SupplierService.cs:line 27
+   at PointOfSealApi.Controllers.SupplierController.AddSupplier(Supplier supplier) in F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\PointOfSealApi\Controllers\SupplierController.cs:line 33
+11-Aug-2020 13:35:17.606 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) in 6329.2746000000006ms
+11-Aug-2020 13:35:17.609 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at PointOfSealApi.Controllers.SupplierController.AddSupplier(Supplier supplier) in F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\PointOfSealApi\Controllers\SupplierController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+11-Aug-2020 13:35:17.841 +06:00 [INF] Request finished in 6900.0418ms 500 text/html; charset=utf-8
+11-Aug-2020 13:36:14.793 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/supplier/addsupplier application/json-patch+json 370
+11-Aug-2020 13:36:14.793 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:36:14.793 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:36:14.793 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:36:14.793 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:36:14.794 +06:00 [INF] Route matched with {action = "AddSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddSupplier(Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:36:14.880 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:36:14.882 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:37:15.021 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11-Aug-2020 13:37:16.134 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+11-Aug-2020 13:37:16.134 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+11-Aug-2020 13:37:16.272 +06:00 [INF] Request finished in 139.7027ms 200 
+11-Aug-2020 13:37:16.485 +06:00 [INF] Request finished in 353.2553ms 200 text/html
+11-Aug-2020 13:37:16.951 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+11-Aug-2020 13:37:19.361 +06:00 [INF] Request finished in 2410.0827ms 200 application/json;charset=utf-8
+11-Aug-2020 13:37:35.934 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/supplier/addsupplier application/json-patch+json 370
+11-Aug-2020 13:37:35.935 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:37:35.935 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:37:35.945 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:37:35.945 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:37:36.023 +06:00 [INF] Route matched with {action = "AddSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddSupplier(Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:37:36.406 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:37:36.581 +06:00 [WRN] No type was specified for the decimal column 'Cost' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:37:36.582 +06:00 [WRN] No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:37:36.582 +06:00 [WRN] No type was specified for the decimal column 'Quantity' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:37:36.656 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:37:41.710 +06:00 [INF] Executed DbCommand (222ms) [Parameters=[@__supplier_Phone_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE [item].[Phone] = @__supplier_Phone_0
+11-Aug-2020 13:37:46.233 +06:00 [INF] Executed DbCommand (623ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Inventory].[Supplier] ([Address], [City], [CompanyId], [CountryId], [CreatedBy], [CreatedDate], [Email], [IsActive], [Phone], [PostalCode], [State], [SupplierName], [UpdatedBy], [UpdatedDate], [VatNumber])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+SELECT [SupplierId]
+FROM [Inventory].[Supplier]
+WHERE @@ROWCOUNT = 1 AND [SupplierId] = scope_identity();
+11-Aug-2020 13:37:48.070 +06:00 [INF] Executed action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11655.721000000001ms.
+11-Aug-2020 13:37:48.091 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Supplier'.
+11-Aug-2020 13:37:48.156 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) in 12129.3335ms
+11-Aug-2020 13:37:48.172 +06:00 [INF] Request finished in 12238.0209ms 200 application/json; charset=utf-8
+11-Aug-2020 13:47:24.382 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11-Aug-2020 13:47:25.055 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+11-Aug-2020 13:47:25.055 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+11-Aug-2020 13:47:25.097 +06:00 [INF] Request finished in 44.2877ms 200 
+11-Aug-2020 13:47:25.229 +06:00 [INF] Request finished in 176.8293ms 200 text/html
+11-Aug-2020 13:47:25.469 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+11-Aug-2020 13:47:25.720 +06:00 [INF] Request finished in 250.6444ms 200 application/json;charset=utf-8
+11-Aug-2020 13:47:58.225 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/supplier/addsupplier application/json-patch+json 372
+11-Aug-2020 13:47:58.226 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:47:58.226 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:47:58.232 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:47:58.232 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:47:58.296 +06:00 [INF] Route matched with {action = "AddSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddSupplier(Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:47:58.584 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:47:58.691 +06:00 [WRN] No type was specified for the decimal column 'Cost' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:47:58.691 +06:00 [WRN] No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:47:58.691 +06:00 [WRN] No type was specified for the decimal column 'Quantity' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:47:58.747 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:48:05.943 +06:00 [INF] Executed DbCommand (365ms) [Parameters=[@__supplier_Phone_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE [item].[Phone] = @__supplier_Phone_0
+11-Aug-2020 13:48:06.118 +06:00 [INF] Executed action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7529.2775ms.
+11-Aug-2020 13:48:06.138 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Supplier'.
+11-Aug-2020 13:48:06.153 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) in 7853.9714ms
+11-Aug-2020 13:48:06.163 +06:00 [INF] Request finished in 7937.7597ms 200 application/json; charset=utf-8
+11-Aug-2020 13:48:21.093 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/supplier/addsupplier application/json-patch+json 372
+11-Aug-2020 13:48:21.094 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:48:21.094 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:48:21.094 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:48:21.094 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:48:21.094 +06:00 [INF] Route matched with {action = "AddSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddSupplier(Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:48:21.125 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:48:21.134 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:48:21.189 +06:00 [INF] Executed DbCommand (47ms) [Parameters=[@__supplier_Phone_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE [item].[Phone] = @__supplier_Phone_0
+11-Aug-2020 13:48:21.604 +06:00 [INF] Executed DbCommand (324ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Inventory].[Supplier] ([Address], [City], [CompanyId], [CountryId], [CreatedBy], [CreatedDate], [Email], [IsActive], [Phone], [PostalCode], [State], [SupplierName], [UpdatedBy], [UpdatedDate], [VatNumber])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+SELECT [SupplierId]
+FROM [Inventory].[Supplier]
+WHERE @@ROWCOUNT = 1 AND [SupplierId] = scope_identity();
+11-Aug-2020 13:48:21.634 +06:00 [INF] Executed action method PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 508.7907ms.
+11-Aug-2020 13:48:21.634 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Supplier'.
+11-Aug-2020 13:48:21.635 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.AddSupplier (PointOfSealApi) in 540.2874ms
+11-Aug-2020 13:48:21.635 +06:00 [INF] Request finished in 541.7472ms 200 application/json; charset=utf-8
+11-Aug-2020 13:49:12.903 +06:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44378/api/supplier/updatesupplier/2 application/json-patch+json 369
+11-Aug-2020 13:49:12.917 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:49:12.917 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:49:12.917 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:49:12.917 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:49:12.962 +06:00 [INF] Route matched with {action = "UpdateSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateSupplier(Int32, Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:49:13.000 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:49:13.007 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:49:13.088 +06:00 [INF] Executed DbCommand (72ms) [Parameters=[@__supplierId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE [item].[SupplierId] = @__supplierId_0
+11-Aug-2020 13:49:13.252 +06:00 [INF] Executed DbCommand (144ms) [Parameters=[@p15='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Inventory].[Supplier] SET [Address] = @p0, [City] = @p1, [CompanyId] = @p2, [CountryId] = @p3, [CreatedBy] = @p4, [CreatedDate] = @p5, [Email] = @p6, [IsActive] = @p7, [Phone] = @p8, [PostalCode] = @p9, [State] = @p10, [SupplierName] = @p11, [UpdatedBy] = @p12, [UpdatedDate] = @p13, [VatNumber] = @p14
+WHERE [SupplierId] = @p15;
+SELECT @@ROWCOUNT;
+11-Aug-2020 13:49:13.280 +06:00 [INF] Executed action method PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 279.6936ms.
+11-Aug-2020 13:49:13.280 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Supplier'.
+11-Aug-2020 13:49:13.281 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi) in 318.9547ms
+11-Aug-2020 13:49:13.281 +06:00 [INF] Request finished in 378.6032ms 200 application/json; charset=utf-8
+11-Aug-2020 13:51:43.160 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11-Aug-2020 13:51:43.794 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+11-Aug-2020 13:51:43.794 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+11-Aug-2020 13:51:43.831 +06:00 [INF] Request finished in 36.6668ms 200 
+11-Aug-2020 13:51:43.976 +06:00 [INF] Request finished in 184.1011ms 200 text/html
+11-Aug-2020 13:51:44.158 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+11-Aug-2020 13:51:44.544 +06:00 [INF] Request finished in 386.0658ms 200 application/json;charset=utf-8
+11-Aug-2020 13:59:02.168 +06:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44378/api/supplier/updatesupplier/2 application/json-patch+json 369
+11-Aug-2020 13:59:02.170 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:59:02.170 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:59:02.177 +06:00 [INF] Policy execution failed.
+11-Aug-2020 13:59:02.177 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 13:59:02.248 +06:00 [INF] Route matched with {action = "UpdateSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateSupplier(Int32, Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 13:59:02.632 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 13:59:05.963 +06:00 [WRN] No type was specified for the decimal column 'Cost' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:59:05.964 +06:00 [WRN] No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:59:05.964 +06:00 [WRN] No type was specified for the decimal column 'Quantity' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 13:59:06.003 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 13:59:08.762 +06:00 [INF] Executed DbCommand (195ms) [Parameters=[@__supplierId_0='?' (DbType = Int32), @__supplier_Phone_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE ([item].[SupplierId] = @__supplierId_0) AND (([item].[Phone] <> @__supplier_Phone_1) OR [item].[Phone] IS NULL)
+11-Aug-2020 13:59:32.889 +06:00 [INF] Executed DbCommand (87ms) [Parameters=[@p15='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Inventory].[Supplier] SET [Address] = @p0, [City] = @p1, [CompanyId] = @p2, [CountryId] = @p3, [CreatedBy] = @p4, [CreatedDate] = @p5, [Email] = @p6, [IsActive] = @p7, [Phone] = @p8, [PostalCode] = @p9, [State] = @p10, [SupplierName] = @p11, [UpdatedBy] = @p12, [UpdatedDate] = @p13, [VatNumber] = @p14
+WHERE [SupplierId] = @p15;
+SELECT @@ROWCOUNT;
+11-Aug-2020 13:59:32.915 +06:00 [INF] Executed action method PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30274.567600000002ms.
+11-Aug-2020 13:59:32.928 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Supplier'.
+11-Aug-2020 13:59:32.943 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi) in 30690.9362ms
+11-Aug-2020 13:59:32.951 +06:00 [INF] Request finished in 30783.2902ms 200 application/json; charset=utf-8
+11-Aug-2020 14:00:22.719 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11-Aug-2020 14:00:23.394 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+11-Aug-2020 14:00:23.394 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+11-Aug-2020 14:00:23.432 +06:00 [INF] Request finished in 39.6115ms 200 
+11-Aug-2020 14:00:23.618 +06:00 [INF] Request finished in 225.9787ms 200 text/html
+11-Aug-2020 14:00:23.858 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+11-Aug-2020 14:00:24.252 +06:00 [INF] Request finished in 393.2282ms 200 application/json;charset=utf-8
+11-Aug-2020 14:00:56.780 +06:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44378/api/supplier/updatesupplier/2 application/json-patch+json 369
+11-Aug-2020 14:00:56.785 +06:00 [INF] Policy execution failed.
+11-Aug-2020 14:00:56.785 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 14:00:56.795 +06:00 [INF] Policy execution failed.
+11-Aug-2020 14:00:56.795 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+11-Aug-2020 14:00:56.872 +06:00 [INF] Route matched with {action = "UpdateSupplier", controller = "Supplier"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateSupplier(Int32, Pizza.Domain.Entities.DataModel.Supplier) on controller PointOfSealApi.Controllers.SupplierController (PointOfSealApi).
+11-Aug-2020 14:00:57.128 +06:00 [INF] Executing action method PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi) - Validation state: "Valid"
+11-Aug-2020 14:01:04.636 +06:00 [WRN] No type was specified for the decimal column 'Cost' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 14:01:04.636 +06:00 [WRN] No type was specified for the decimal column 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 14:01:04.636 +06:00 [WRN] No type was specified for the decimal column 'Quantity' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+11-Aug-2020 14:01:04.680 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+11-Aug-2020 14:01:06.542 +06:00 [INF] Executed DbCommand (147ms) [Parameters=[@__supplierId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[SupplierId], [item].[Address], [item].[City], [item].[CompanyId], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[Email], [item].[IsActive], [item].[Phone], [item].[PostalCode], [item].[State], [item].[SupplierName], [item].[UpdatedBy], [item].[UpdatedDate], [item].[VatNumber]
+FROM [Inventory].[Supplier] AS [item]
+WHERE [item].[SupplierId] = @__supplierId_0
+11-Aug-2020 14:01:09.174 +06:00 [INF] Executed DbCommand (59ms) [Parameters=[@p15='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Inventory].[Supplier] SET [Address] = @p0, [City] = @p1, [CompanyId] = @p2, [CountryId] = @p3, [CreatedBy] = @p4, [CreatedDate] = @p5, [Email] = @p6, [IsActive] = @p7, [Phone] = @p8, [PostalCode] = @p9, [State] = @p10, [SupplierName] = @p11, [UpdatedBy] = @p12, [UpdatedDate] = @p13, [VatNumber] = @p14
+WHERE [SupplierId] = @p15;
+SELECT @@ROWCOUNT;
+11-Aug-2020 14:01:09.266 +06:00 [INF] Executed action method PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12131.3789ms.
+11-Aug-2020 14:01:09.286 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Supplier'.
+11-Aug-2020 14:01:09.308 +06:00 [INF] Executed action PointOfSealApi.Controllers.SupplierController.UpdateSupplier (PointOfSealApi) in 12433.105800000001ms
+11-Aug-2020 14:01:09.322 +06:00 [INF] Request finished in 12542.4099ms 200 application/json; charset=utf-8

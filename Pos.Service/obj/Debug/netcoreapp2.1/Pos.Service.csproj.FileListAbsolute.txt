@@ -1,0 +1,16 @@
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.csproj.CoreCompileInputs.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.AssemblyInfoInputs.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.AssemblyInfo.cs
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pos.Service.deps.json
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pos.Service.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pos.Service.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pizza.Domain.Entities.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pizza.Domain.Entities.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.csprojAssemblyReference.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.csproj.CopyComplete
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\obj\Debug\netcoreapp2.1\Pos.Service.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pos.Service.Interfaces.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\bin\Debug\netcoreapp2.1\Pos.Service.Interfaces.pdb

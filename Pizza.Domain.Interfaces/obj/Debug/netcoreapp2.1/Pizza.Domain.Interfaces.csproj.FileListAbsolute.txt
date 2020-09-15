@@ -1,0 +1,12 @@
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.csprojAssemblyReference.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.csproj.CoreCompileInputs.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.AssemblyInfoInputs.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.AssemblyInfo.cs
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\bin\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.deps.json
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\bin\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\bin\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\bin\Debug\netcoreapp2.1\Pizza.Domain.Entities.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\bin\Debug\netcoreapp2.1\Pizza.Domain.Entities.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.csproj.CopyComplete
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pizza.Domain.Interfaces\obj\Debug\netcoreapp2.1\Pizza.Domain.Interfaces.pdb

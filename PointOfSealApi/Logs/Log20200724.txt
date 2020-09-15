@@ -1,0 +1,388 @@
+24-Jul-2020 00:34:19.824 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 00:34:20.743 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 00:34:20.743 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 00:34:20.788 +06:00 [INF] Request finished in 53.4212ms 200 
+24-Jul-2020 00:34:20.993 +06:00 [INF] Request finished in 259.4503ms 200 text/html
+24-Jul-2020 00:34:21.290 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 00:34:21.649 +06:00 [INF] Request finished in 358.6348ms 200 application/json;charset=utf-8
+24-Jul-2020 00:35:09.071 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/brand/addbrand application/json-patch+json 229
+24-Jul-2020 00:35:09.120 +06:00 [INF] Policy execution failed.
+24-Jul-2020 00:35:09.120 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 00:35:09.128 +06:00 [INF] Policy execution failed.
+24-Jul-2020 00:35:09.128 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 00:35:09.253 +06:00 [INF] Route matched with {action = "AddBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBrand(Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 00:35:09.274 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) in 5.4124ms
+24-Jul-2020 00:35:09.278 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Pos.Service.Interfaces.IBrandService' while attempting to activate 'PointOfSealApi.Controllers.BrandController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+24-Jul-2020 00:35:09.387 +06:00 [INF] Request finished in 316.5528ms 500 text/html; charset=utf-8
+24-Jul-2020 00:35:09.414 +06:00 [INF] Connection id "0HM1F6S1S6OGC", Request id "0HM1F6S1S6OGC:00000002": the application completed without reading the entire request body.
+24-Jul-2020 00:43:11.054 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 00:43:11.892 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 00:43:11.892 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 00:43:11.942 +06:00 [INF] Request finished in 53.1729ms 200 
+24-Jul-2020 00:43:12.113 +06:00 [INF] Request finished in 225.4691ms 200 text/html
+24-Jul-2020 00:43:12.390 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 00:43:12.715 +06:00 [INF] Request finished in 324.4788ms 200 application/json;charset=utf-8
+24-Jul-2020 00:44:00.785 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/brand/addbrand application/json-patch+json 227
+24-Jul-2020 00:44:00.788 +06:00 [INF] Policy execution failed.
+24-Jul-2020 00:44:00.789 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 00:44:00.799 +06:00 [INF] Policy execution failed.
+24-Jul-2020 00:44:00.800 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 00:44:00.875 +06:00 [INF] Route matched with {action = "AddBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBrand(Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 00:44:00.882 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) in 4.9468000000000005ms
+24-Jul-2020 00:44:00.885 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Pos.Service.Interfaces.IBrandService' while attempting to activate 'PointOfSealApi.Controllers.BrandController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+24-Jul-2020 00:44:00.960 +06:00 [INF] Request finished in 175.0029ms 500 text/html; charset=utf-8
+24-Jul-2020 00:44:00.971 +06:00 [INF] Connection id "0HM1F7105O9P7", Request id "0HM1F7105O9P7:00000002": the application completed without reading the entire request body.
+24-Jul-2020 00:48:27.423 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 00:48:28.140 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 00:48:28.140 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 00:48:28.180 +06:00 [INF] Request finished in 42.0838ms 200 
+24-Jul-2020 00:48:28.306 +06:00 [INF] Request finished in 169.2084ms 200 text/html
+24-Jul-2020 00:48:28.540 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 00:48:28.902 +06:00 [INF] Request finished in 361.664ms 200 application/json;charset=utf-8
+24-Jul-2020 00:49:10.294 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/brand/addbrand application/json-patch+json 229
+24-Jul-2020 00:49:10.297 +06:00 [INF] Policy execution failed.
+24-Jul-2020 00:49:10.297 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 00:49:10.307 +06:00 [INF] Policy execution failed.
+24-Jul-2020 00:49:10.307 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 00:49:10.376 +06:00 [INF] Route matched with {action = "AddBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBrand(Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 00:49:11.664 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 00:50:14.368 +06:00 [WRN] No type was specified for the decimal column 'CostPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 00:50:14.368 +06:00 [WRN] No type was specified for the decimal column 'SellingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 00:50:14.414 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 00:50:16.345 +06:00 [INF] Executed DbCommand (371ms) [Parameters=[@__brand_BrandName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[BrandId], [item].[BrandCode], [item].[BrandName], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Brand] AS [item]
+WHERE [item].[BrandName] = @__brand_BrandName_0
+24-Jul-2020 00:50:21.858 +06:00 [INF] Executed DbCommand (285ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Inventory].[Brand] ([BrandCode], [BrandName], [CountryId], [CreatedBy], [CreatedDate], [IsActive], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [BrandId]
+FROM [Inventory].[Brand]
+WHERE @@ROWCOUNT = 1 AND [BrandId] = scope_identity();
+24-Jul-2020 00:50:29.053 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 77381.7886ms.
+24-Jul-2020 00:50:29.074 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Brand'.
+24-Jul-2020 00:50:29.094 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) in 78715.1495ms
+24-Jul-2020 00:50:29.104 +06:00 [INF] Request finished in 78809.4122ms 200 application/json; charset=utf-8
+24-Jul-2020 12:43:53.300 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 12:43:56.789 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 12:43:56.789 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 12:43:56.946 +06:00 [INF] Request finished in 159.5051ms 200 
+24-Jul-2020 12:43:57.510 +06:00 [INF] Request finished in 724.2959ms 200 text/html
+24-Jul-2020 12:43:58.857 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 12:43:59.815 +06:00 [INF] Request finished in 957.5566ms 200 application/json;charset=utf-8
+24-Jul-2020 12:44:25.449 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/api/brand/getallactivebrand  
+24-Jul-2020 12:44:25.694 +06:00 [INF] Route matched with {action = "GetAllActiveBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllActiveBrand() on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 12:44:26.696 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 12:44:32.663 +06:00 [WRN] No type was specified for the decimal column 'CostPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 12:44:32.663 +06:00 [WRN] No type was specified for the decimal column 'SellingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 12:44:32.977 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 12:44:35.066 +06:00 [INF] Executed DbCommand (551ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[BrandId], [s].[BrandName], [s].[BrandCode], [s].[IsActive], [s].[CreatedDate], [s].[CreatedBy], [s].[UpdatedBy], [s].[UpdatedDate]
+FROM [Inventory].[Brand] AS [s]
+WHERE [s].[IsActive] = 1
+24-Jul-2020 12:44:35.311 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8608.256800000001ms.
+24-Jul-2020 12:44:35.331 +06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pizza.Domain.Entities.DataModel.Brand, Pizza.Domain.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+24-Jul-2020 12:44:35.390 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) in 9681.3477ms
+24-Jul-2020 12:44:35.400 +06:00 [INF] Request finished in 9950.1367ms 200 application/json; charset=utf-8
+24-Jul-2020 22:21:27.556 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 22:21:29.495 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 22:21:29.495 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 22:21:29.591 +06:00 [INF] Request finished in 98.1199ms 200 
+24-Jul-2020 22:21:29.921 +06:00 [INF] Request finished in 428.8992ms 200 text/html
+24-Jul-2020 22:21:30.250 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 22:21:31.044 +06:00 [INF] Request finished in 794.4048ms 200 application/json;charset=utf-8
+24-Jul-2020 22:22:52.292 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 22:22:52.969 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 22:22:52.969 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 22:22:53.021 +06:00 [INF] Request finished in 52.467ms 200 
+24-Jul-2020 22:22:53.211 +06:00 [INF] Request finished in 245.4723ms 200 text/html
+24-Jul-2020 22:22:53.461 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 22:22:53.824 +06:00 [INF] Request finished in 362.8774ms 200 application/json;charset=utf-8
+24-Jul-2020 22:23:56.068 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/brand/addbrand application/json-patch+json 231
+24-Jul-2020 22:23:56.070 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:23:56.070 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:23:56.078 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:23:56.078 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:23:56.193 +06:00 [INF] Route matched with {action = "AddBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBrand(Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 22:23:57.102 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 22:23:57.830 +06:00 [WRN] No type was specified for the decimal column 'CostPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 22:23:57.830 +06:00 [WRN] No type was specified for the decimal column 'SellingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 22:23:58.037 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 22:23:59.942 +06:00 [INF] Executed DbCommand (497ms) [Parameters=[@__brand_BrandName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[BrandId], [item].[BrandCode], [item].[BrandName], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Brand] AS [item]
+WHERE [item].[BrandName] = @__brand_BrandName_0
+24-Jul-2020 22:24:00.596 +06:00 [INF] Executed DbCommand (288ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Inventory].[Brand] ([BrandCode], [BrandName], [CountryId], [CreatedBy], [CreatedDate], [IsActive], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [BrandId]
+FROM [Inventory].[Brand]
+WHERE @@ROWCOUNT = 1 AND [BrandId] = scope_identity();
+24-Jul-2020 22:24:00.698 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3579.3342000000002ms.
+24-Jul-2020 22:24:00.742 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Brand'.
+24-Jul-2020 22:24:00.769 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) in 4573.0123ms
+24-Jul-2020 22:24:00.783 +06:00 [INF] Request finished in 4715.1905ms 200 application/json; charset=utf-8
+24-Jul-2020 22:24:26.119 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/brand/addbrand application/json-patch+json 231
+24-Jul-2020 22:24:26.119 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:24:26.119 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:24:26.120 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:24:26.120 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:24:26.120 +06:00 [INF] Route matched with {action = "AddBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBrand(Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 22:24:26.189 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 22:24:26.190 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 22:24:26.256 +06:00 [INF] Executed DbCommand (60ms) [Parameters=[@__brand_BrandName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[BrandId], [item].[BrandCode], [item].[BrandName], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Brand] AS [item]
+WHERE [item].[BrandName] = @__brand_BrandName_0
+24-Jul-2020 22:24:26.295 +06:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Inventory].[Brand] ([BrandCode], [BrandName], [CountryId], [CreatedBy], [CreatedDate], [IsActive], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [BrandId]
+FROM [Inventory].[Brand]
+WHERE @@ROWCOUNT = 1 AND [BrandId] = scope_identity();
+24-Jul-2020 22:24:26.297 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 108.06030000000001ms.
+24-Jul-2020 22:24:26.298 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Brand'.
+24-Jul-2020 22:24:26.300 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.AddBrand (PointOfSealApi) in 179.1219ms
+24-Jul-2020 22:24:26.300 +06:00 [INF] Request finished in 180.6932ms 200 application/json; charset=utf-8
+24-Jul-2020 22:25:11.941 +06:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44378/api/brand/updatebrand/3 application/json-patch+json 232
+24-Jul-2020 22:25:11.941 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:25:11.941 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:25:11.941 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:25:11.941 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:25:11.972 +06:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(Int32, Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 22:25:12.002 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.UpdateBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 22:25:12.005 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 22:25:12.052 +06:00 [INF] Executed DbCommand (42ms) [Parameters=[@__brandId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[BrandId], [item].[BrandCode], [item].[BrandName], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Brand] AS [item]
+WHERE [item].[BrandId] = @__brandId_0
+24-Jul-2020 22:25:12.248 +06:00 [INF] Executed DbCommand (48ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Inventory].[Brand] ([BrandCode], [BrandName], [CountryId], [CreatedBy], [CreatedDate], [IsActive], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [BrandId]
+FROM [Inventory].[Brand]
+WHERE @@ROWCOUNT = 1 AND [BrandId] = scope_identity();
+24-Jul-2020 22:25:12.249 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.UpdateBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 247.3694ms.
+24-Jul-2020 22:25:12.250 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Brand'.
+24-Jul-2020 22:25:12.250 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.UpdateBrand (PointOfSealApi) in 277.1916ms
+24-Jul-2020 22:25:12.250 +06:00 [INF] Request finished in 309.5941ms 200 application/json; charset=utf-8
+24-Jul-2020 22:26:13.843 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/api/brand/getallactivebrand  
+24-Jul-2020 22:26:13.848 +06:00 [INF] Route matched with {action = "GetAllActiveBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllActiveBrand() on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 22:26:13.873 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 22:26:13.892 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 22:26:14.007 +06:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[BrandId], [s].[BrandName], [s].[BrandCode], [s].[IsActive], [s].[CreatedDate], [s].[CreatedBy], [s].[UpdatedBy], [s].[UpdatedDate]
+FROM [Inventory].[Brand] AS [s]
+WHERE [s].[IsActive] = 1
+24-Jul-2020 22:26:14.014 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 140.7413ms.
+24-Jul-2020 22:26:14.014 +06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pizza.Domain.Entities.DataModel.Brand, Pizza.Domain.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+24-Jul-2020 22:26:14.015 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) in 166.68720000000002ms
+24-Jul-2020 22:26:14.016 +06:00 [INF] Request finished in 172.3635ms 200 application/json; charset=utf-8
+24-Jul-2020 22:32:19.141 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 22:32:19.972 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 22:32:19.972 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 22:32:20.007 +06:00 [INF] Request finished in 37.8229ms 200 
+24-Jul-2020 22:32:20.158 +06:00 [INF] Request finished in 189.1102ms 200 text/html
+24-Jul-2020 22:32:20.382 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 22:32:20.663 +06:00 [INF] Request finished in 281.5581ms 200 application/json;charset=utf-8
+24-Jul-2020 22:33:32.641 +06:00 [INF] Request starting HTTP/1.1 PUT http://localhost:44378/api/brand/updatebrand/3 application/json-patch+json 233
+24-Jul-2020 22:33:32.643 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:33:32.644 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:33:32.663 +06:00 [INF] Policy execution failed.
+24-Jul-2020 22:33:32.663 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 22:33:32.730 +06:00 [INF] Route matched with {action = "UpdateBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBrand(Int32, Pizza.Domain.Entities.DataModel.Brand) on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 22:33:32.968 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.UpdateBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 22:33:42.182 +06:00 [WRN] No type was specified for the decimal column 'CostPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 22:33:42.182 +06:00 [WRN] No type was specified for the decimal column 'SellingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 22:33:42.225 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 22:33:44.637 +06:00 [INF] Executed DbCommand (142ms) [Parameters=[@__brandId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[BrandId], [item].[BrandCode], [item].[BrandName], [item].[CountryId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Brand] AS [item]
+WHERE [item].[BrandId] = @__brandId_0
+24-Jul-2020 22:33:54.285 +06:00 [INF] Executed DbCommand (133ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Inventory].[Brand] SET [BrandCode] = @p0, [BrandName] = @p1, [CountryId] = @p2, [CreatedBy] = @p3, [CreatedDate] = @p4, [IsActive] = @p5, [UpdatedBy] = @p6, [UpdatedDate] = @p7
+WHERE [BrandId] = @p8;
+SELECT @@ROWCOUNT;
+24-Jul-2020 22:33:57.299 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.UpdateBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24324.0292ms.
+24-Jul-2020 22:33:57.318 +06:00 [INF] Executing ObjectResult, writing value of type 'Pizza.Domain.Entities.DataModel.Brand'.
+24-Jul-2020 22:33:57.329 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.UpdateBrand (PointOfSealApi) in 24595.005100000002ms
+24-Jul-2020 22:33:57.339 +06:00 [INF] Request finished in 24698.1714ms 200 application/json; charset=utf-8
+24-Jul-2020 22:34:09.231 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/api/brand/getallactivebrand  
+24-Jul-2020 22:34:09.235 +06:00 [INF] Route matched with {action = "GetAllActiveBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllActiveBrand() on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 22:34:09.257 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 22:34:09.261 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServeConnection' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 22:34:09.361 +06:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[BrandId], [s].[BrandName], [s].[BrandCode], [s].[IsActive], [s].[CreatedDate], [s].[CreatedBy], [s].[UpdatedBy], [s].[UpdatedDate]
+FROM [Inventory].[Brand] AS [s]
+WHERE [s].[IsActive] = 1
+24-Jul-2020 22:34:09.368 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 110.4347ms.
+24-Jul-2020 22:34:09.368 +06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pizza.Domain.Entities.DataModel.Brand, Pizza.Domain.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+24-Jul-2020 22:34:09.370 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) in 134.309ms
+24-Jul-2020 22:34:09.370 +06:00 [INF] Request finished in 139.2488ms 200 application/json; charset=utf-8
+24-Jul-2020 23:51:08.827 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 23:51:09.455 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 23:51:09.455 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 23:51:09.494 +06:00 [INF] Request finished in 41.2596ms 200 
+24-Jul-2020 23:51:09.665 +06:00 [INF] Request finished in 213.0016ms 200 text/html
+24-Jul-2020 23:51:09.938 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 23:51:10.388 +06:00 [INF] Request finished in 449.8786ms 200 application/json;charset=utf-8
+24-Jul-2020 23:51:35.602 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/unit/addunit application/json-patch+json 184
+24-Jul-2020 23:51:35.604 +06:00 [INF] Policy execution failed.
+24-Jul-2020 23:51:35.604 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 23:51:35.616 +06:00 [INF] Policy execution failed.
+24-Jul-2020 23:51:35.616 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 23:51:35.684 +06:00 [INF] Route matched with {action = "AddUnit", controller = "Unit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUnit(Pizza.Domain.Entities.DataModel.Unit) on controller PointOfSealApi.Controllers.UnitController (PointOfSealApi).
+24-Jul-2020 23:51:35.691 +06:00 [INF] Executed action PointOfSealApi.Controllers.UnitController.AddUnit (PointOfSealApi) in 3.8959ms
+24-Jul-2020 23:51:35.695 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Pos.Service.Interfaces.IUnitService' while attempting to activate 'PointOfSealApi.Controllers.UnitController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+24-Jul-2020 23:51:35.912 +06:00 [INF] Request finished in 309.9912ms 500 text/html; charset=utf-8
+24-Jul-2020 23:51:35.928 +06:00 [INF] Connection id "0HM1FV8IQVR32", Request id "0HM1FV8IQVR32:00000002": the application completed without reading the entire request body.
+24-Jul-2020 23:52:38.588 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 23:52:39.205 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 23:52:39.205 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 23:52:39.240 +06:00 [INF] Request finished in 36.7662ms 200 
+24-Jul-2020 23:52:39.379 +06:00 [INF] Request finished in 176.7672ms 200 text/html
+24-Jul-2020 23:52:39.567 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 23:52:39.876 +06:00 [INF] Request finished in 309.8938ms 200 application/json;charset=utf-8
+24-Jul-2020 23:52:52.693 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/unit/addunit application/json-patch+json 184
+24-Jul-2020 23:52:52.696 +06:00 [INF] Policy execution failed.
+24-Jul-2020 23:52:52.696 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 23:52:52.709 +06:00 [INF] Policy execution failed.
+24-Jul-2020 23:52:52.709 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 23:52:52.779 +06:00 [INF] Route matched with {action = "AddUnit", controller = "Unit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUnit(Pizza.Domain.Entities.DataModel.Unit) on controller PointOfSealApi.Controllers.UnitController (PointOfSealApi).
+24-Jul-2020 23:52:53.017 +06:00 [INF] Executing action method PointOfSealApi.Controllers.UnitController.AddUnit (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 23:52:53.133 +06:00 [WRN] No type was specified for the decimal column 'CostPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 23:52:53.133 +06:00 [WRN] No type was specified for the decimal column 'SellingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 23:52:53.191 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 23:52:53.760 +06:00 [INF] Executed DbCommand (197ms) [Parameters=[@__unit_UnitName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[UnitId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UnitName], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Unit] AS [item]
+WHERE [item].[UnitName] = @__unit_UnitName_0
+24-Jul-2020 23:52:53.771 +06:00 [ERR] An error occurred using a transaction.
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at System.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at System.Data.SqlClient.SqlInternalTransaction.Commit()
+   at System.Data.SqlClient.SqlTransaction.Commit()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.Commit()
+24-Jul-2020 23:52:54.203 +06:00 [ERR] Error report generate {"UnitId":0,"UnitName":"","IsActive":false,"CreatedDate":"2020-07-24T23:52:53.7377350+06:00","CreatedBy":0,"UpdatedDate":"2020-07-24T23:52:53.7377362+06:00","UpdatedBy":0,"$type":"Unit"} on "2020-07-24T23:52:54.1677993+06:00"
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at Pos.Service.UnitService.AddUnit(Unit unit) in F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Service\UnitService.cs:line 26
+   at PointOfSealApi.Controllers.UnitController.AddUnit(Unit unit) in F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\PointOfSealApi\Controllers\UnitController.cs:line 32
+24-Jul-2020 23:52:54.392 +06:00 [INF] Executed action PointOfSealApi.Controllers.UnitController.AddUnit (PointOfSealApi) in 1609.1799ms
+24-Jul-2020 23:52:54.393 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at PointOfSealApi.Controllers.UnitController.AddUnit(Unit unit) in F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\PointOfSealApi\Controllers\UnitController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+24-Jul-2020 23:52:54.510 +06:00 [INF] Request finished in 1817.3801ms 500 text/html; charset=utf-8
+24-Jul-2020 23:59:11.661 +06:00 [INF] User profile is available. Using 'C:\Users\Md Mehedi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+24-Jul-2020 23:59:12.364 +06:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:2130/  0
+24-Jul-2020 23:59:12.364 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/index.html  
+24-Jul-2020 23:59:12.405 +06:00 [INF] Request finished in 45.638ms 200 
+24-Jul-2020 23:59:12.587 +06:00 [INF] Request finished in 228.2765ms 200 text/html
+24-Jul-2020 23:59:12.827 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/swagger/v1.0/swagger.json  
+24-Jul-2020 23:59:13.141 +06:00 [INF] Request finished in 314.1394ms 200 application/json;charset=utf-8
+24-Jul-2020 23:59:24.615 +06:00 [INF] Request starting HTTP/1.1 GET http://localhost:44378/api/brand/getallactivebrand  
+24-Jul-2020 23:59:24.690 +06:00 [INF] Route matched with {action = "GetAllActiveBrand", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllActiveBrand() on controller PointOfSealApi.Controllers.BrandController (PointOfSealApi).
+24-Jul-2020 23:59:24.898 +06:00 [INF] Executing action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 23:59:25.022 +06:00 [WRN] No type was specified for the decimal column 'CostPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 23:59:25.022 +06:00 [WRN] No type was specified for the decimal column 'SellingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+24-Jul-2020 23:59:25.071 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 23:59:25.578 +06:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[BrandId], [s].[BrandName], [s].[BrandCode], [s].[IsActive], [s].[CreatedDate], [s].[CreatedBy], [s].[UpdatedBy], [s].[UpdatedDate]
+FROM [Inventory].[Brand] AS [s]
+WHERE [s].[IsActive] = 1
+24-Jul-2020 23:59:25.640 +06:00 [INF] Executed action method PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 736.6563ms.
+24-Jul-2020 23:59:25.657 +06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Pizza.Domain.Entities.DataModel.Brand, Pizza.Domain.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+24-Jul-2020 23:59:25.669 +06:00 [INF] Executed action PointOfSealApi.Controllers.BrandController.GetAllActiveBrand (PointOfSealApi) in 976.55860000000007ms
+24-Jul-2020 23:59:25.681 +06:00 [INF] Request finished in 1066.1924ms 200 application/json; charset=utf-8
+24-Jul-2020 23:59:43.607 +06:00 [INF] Request starting HTTP/1.1 POST http://localhost:44378/api/unit/addunit application/json-patch+json 184
+24-Jul-2020 23:59:43.609 +06:00 [INF] Policy execution failed.
+24-Jul-2020 23:59:43.609 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 23:59:43.609 +06:00 [INF] Policy execution failed.
+24-Jul-2020 23:59:43.609 +06:00 [INF] Request origin https://localhost:44378 does not have permission to access the resource.
+24-Jul-2020 23:59:43.627 +06:00 [INF] Route matched with {action = "AddUnit", controller = "Unit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUnit(Pizza.Domain.Entities.DataModel.Unit) on controller PointOfSealApi.Controllers.UnitController (PointOfSealApi).
+24-Jul-2020 23:59:43.694 +06:00 [INF] Executing action method PointOfSealApi.Controllers.UnitController.AddUnit (PointOfSealApi) - Validation state: "Valid"
+24-Jul-2020 23:59:51.011 +06:00 [INF] Entity Framework Core 2.1.14-servicing-32113 initialized 'SqlServerContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+24-Jul-2020 23:59:54.414 +06:00 [INF] Executed DbCommand (81ms) [Parameters=[@__unit_UnitName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [item].[UnitId], [item].[CreatedBy], [item].[CreatedDate], [item].[IsActive], [item].[UnitName], [item].[UpdatedBy], [item].[UpdatedDate]
+FROM [Inventory].[Unit] AS [item]
+WHERE [item].[UnitName] = @__unit_UnitName_0

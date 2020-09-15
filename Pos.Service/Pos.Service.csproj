@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pizza.Domain.Interfaces\Pizza.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\Pos.Service.Interfaces\Pos.Service.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

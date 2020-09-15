@@ -1,0 +1,12 @@
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\bin\Debug\netcoreapp2.1\Pos.Context.deps.json
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\bin\Debug\netcoreapp2.1\Pos.Context.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.csprojAssemblyReference.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.csproj.CoreCompileInputs.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.AssemblyInfoInputs.cache
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.AssemblyInfo.cs
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\bin\Debug\netcoreapp2.1\Pos.Context.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\bin\Debug\netcoreapp2.1\Pizza.Domain.Entities.dll
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\bin\Debug\netcoreapp2.1\Pizza.Domain.Entities.pdb
+F:\Development\Projects\POS\POS_Front-End\PointOfSealApi\Pos.Context\obj\Debug\netcoreapp2.1\Pos.Context.csproj.CopyComplete
